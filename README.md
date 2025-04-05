@@ -23,10 +23,10 @@ A command-line tool (CLI) to scan and find Git repositories with uncommitted cha
 ```bash
 # Clone repository
 git clone https://github.com/nguyendangminh/gus.git
-cd gus
+cd gus/cmd/gus
 
 # Build and install
-go install
+go build
 ```
 
 ### Using Go
@@ -56,21 +56,25 @@ Flags:
 ### Examples
 
 1. Scan current directory:
+
 ```bash
 gus
 ```
 
 2. Scan specific directory:
+
 ```bash
 gus /path/to/directory
 ```
 
 3. Output in JSON format:
+
 ```bash
 gus --json
 ```
 
 4. Show detailed information:
+
 ```bash
 gus --verbose
 ```
@@ -150,4 +154,4 @@ Contributions are welcome! Please:
 
 ## 📄 License
 
-MIT License - see the [LICENSE](LICENSE) file for details. 
+MIT License - see the [LICENSE](LICENSE) file for details.
